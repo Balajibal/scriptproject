@@ -65,6 +65,24 @@ Publish the website in the given URL.
 
 </html>
 ```
+### arearectangle.js
+```
+addBtn = document.querySelector('#button_calculate');
+
+addBtn.addEventListener('click',function(e){
+
+    txtA = document.querySelector('#value_a');
+    txtB = document.querySelector('#value_b');
+    txtC = document.querySelector('#value_c');
+
+    let c;
+
+    c = parseFloat(txtA.value) * parseFloat(txtB.value);
+
+    txtC.value = c;
+});
+
+```
 
 ### mathadd.html
 ```
@@ -103,10 +121,29 @@ Publish the website in the given URL.
         </div>
     </div>
     </div>
-    <script src="/static/js/abcd.js"></script>
+    <script src="/static/js/mathadd.js"></script>
 </body>
 
 </html>
+```
+
+### mathadd.js
+```
+
+addBtn = document.querySelector('#button_add');
+
+addBtn.addEventListener('click',function(e){
+
+    txtA = document.querySelector('#value_a');
+    txtB = document.querySelector('#value_b');
+    txtC = document.querySelector('#value_c');
+
+    let c;
+
+    c = parseFloat(txtA.value) + parseFloat(txtB.value);
+
+    txtC.value = c;
+});
 ```
 
 
