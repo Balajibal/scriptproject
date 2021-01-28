@@ -1,0 +1,36 @@
+container{
+    background-color: blue;
+}
+
+.formview{
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.banner{
+    display: block;
+    width: 50%;
+    background-color: #264E14;
+    padding-top: 20px;
+    text-align: center;
+    height: 60px;
+    align-content: center;
+    padding-bottom: 100px;
+}
+
+.content{
+    display: block;
+    width: 50%;
+    background-color: #434E14;
+    text-align: center;
+    height: 250px;
+    align-content: center;
+
+}
+
+input{
+    color: #4E3C14;
+}
+button{
+    color: #4E3C14;
+}

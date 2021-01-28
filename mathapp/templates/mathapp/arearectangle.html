@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Area Of A Rectangle</title>
+    <link rel="stylesheet" href="{% static 'css/own.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formview">
+            <div class="banner">
+                CALCULATE AREA OF A RECTANGLE
+            </div>
+            <div class="content">
+                <form action="/addnumber.html/" method="GET">
+                    {% csrf_token %}
+                    <div class="forminput">
+                        <label for="value_a">LENGTH=</label>
+                        <input type="text" name="value_a" id="value_a">
+                    </div>
+                    <div class="forminput">
+                        <label for="value_b">BREADTH=</label>
+                        <input type="text" name="value_b" id="value_b">
+                    </div>
+                    <div class="forminput">
+                        <button type="button" name="button_calculate" id="button_calculate">CALCULATE</button>
+                    </div>
+                    <div class="forminput">
+                        <label for="value_c">AREA=</label>
+                        <input type="text" name="value_c" id="value_c">
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="/static/js/arearectangle.js"></script>
+</body>
+
+</html>
